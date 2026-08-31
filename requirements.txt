@@ -1,0 +1,29 @@
+# Core
+langchain>=1.0,<2
+langgraph>=1.1,<2
+langsmith
+pydantic>=2
+python-dotenv
+
+# Free / low-cost providers used by this course
+langchain-google-genai>=4.0
+google-genai
+langchain-groq
+langchain-openrouter
+langchain-ollama
+
+# RAG
+langchain-text-splitters
+langchain-chroma
+chromadb
+
+# Deep Agents + MCP
+deepagents
+langchain-mcp-adapters
+mcp
+
+# Notebook / development
+jupyterlab
+ipykernel
+pytest
+requests

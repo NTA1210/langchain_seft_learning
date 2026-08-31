@@ -1,0 +1,9 @@
+.venv/
+.env
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+chroma_db/
+*.sqlite
+*.sqlite3

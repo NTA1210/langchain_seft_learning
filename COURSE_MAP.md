@@ -1,4 +1,4 @@
-# Course Map — Roadmap Phase 0–35 → Notebooks
+# Course Map — Roadmap Phase 0–42 → Notebooks
 
 Bảng này bảo đảm toàn bộ roadmap ban đầu đều có chỗ học và output cụ thể.
 
@@ -34,12 +34,19 @@ Bảng này bảo đảm toàn bộ roadmap ban đầu đều có chỗ học v�
 | 27 | LangSmith tracing | 14 | Traceable agent |
 | 28 | Evaluation | 14 | Dataset + experiment |
 | 29 | Agent evaluation | 14 | Tool/trajectory/final-output metrics |
-| 30 | Guardrails | 15 | Protected side-effect actions |
-| 31 | Security | 15 | Threat model |
-| 32 | Async/concurrency | 15 | Async agent path |
-| 33 | Cost/latency optimization | 15 | Before/after benchmark |
-| 34 | Deployment | 15 | Deployment architecture/checklist |
-| 35 | Capstone | 15 | Production-style interview agent system |
+| 30 | Threat Modeling & Agentic Security Foundations | 16 | OWASP Agentic threat model + risk register |
+| 31 | Guardrails & Policy Enforcement | 17 | Policy matrix + deterministic enforcement tests |
+| 32 | Identity / Authorization / Tool Security | 18 | Identity model + tool permission matrix |
+| 33 | Prompt Injection / Memory / Data Security | 19 | Injection defense + memory-write policy |
+| 34 | Sandbox / MCP / Supply Chain Security | 20 | Sandbox design + MCP trust policy + inventory |
+| 35 | Agentic Red Teaming / Security Evaluation | 21 | 50+ adversarial cases + security metrics |
+| 36 | SecOps / Incident Response | 22 | Alert catalog + kill switch + incident runbook |
+| 37 | Reliability / SRE | 23 | Failure taxonomy + SLI/SLO design |
+| 38 | Async / Concurrency / Backpressure | 23 | Bounded async execution design |
+| 39 | Cost / Latency / Capacity | 23 | Performance and budget benchmark |
+| 40 | Deployment / Canary / Rollback | 23 | Deployment and rollback plan |
+| 41 | Release Gates / Operational Readiness | 23 | Functional + security eval release gate |
+| 42 | Capstone | 23 | Production AI Interview Agent system |
 
 ## Graduation artifacts
 
@@ -49,12 +56,28 @@ Kết thúc khóa học, repository của bạn nên có thêm:
 artifacts/
 ├── context-engineering.md
 ├── rag-benchmark.md
-├── security-threat-model.md
 ├── evaluation-results.md
 ├── optimization-report.md
+├── security/
+│   ├── threat-model.md
+│   ├── risk-register.csv
+│   ├── policy-matrix.md
+│   ├── identity-model.md
+│   ├── tool-permission-matrix.md
+│   ├── injection-defense.md
+│   ├── memory-write-policy.md
+│   ├── sandbox-design.md
+│   ├── mcp-trust-policy.md
+│   ├── supply-chain-inventory.md
+│   ├── security-eval-dataset.jsonl
+│   ├── security-evaluation-results.md
+│   └── incident-response-runbook.md
 └── capstone/
     ├── architecture.md
+    ├── state-schema.md
+    ├── tool-catalog.md
     ├── eval-dataset.jsonl
+    ├── runbook.md
     └── README.md
 ```
 

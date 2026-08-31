@@ -72,7 +72,8 @@ Langchain_Advanced/
     ├── 07_multi_agent/
     ├── 08_deep_agents/
     ├── 09_mcp_langsmith/
-    └── 10_production_capstone/
+    ├── 10_security/
+    └── 11_production_capstone/
 ```
 
 ## Quy tắc học
@@ -86,6 +87,26 @@ Mỗi notebook đều có 5 phần:
 5. **Done criteria** — điều kiện để được chuyển sang bài tiếp theo.
 
 Không chỉ chạy notebook rồi xem như hoàn thành. Hãy sửa TODO, thử input khác, cố tình tạo lỗi và ghi lại observation.
+
+## Security level
+
+Security không còn là một checklist ở notebook cuối. Course có một level riêng gồm:
+
+- threat modeling theo OWASP Agentic Top 10 2026;
+- guardrails + deterministic policy enforcement;
+- identity, authorization và least privilege cho tools;
+- prompt injection, memory poisoning và data isolation;
+- sandbox, MCP và agentic supply-chain security;
+- adversarial/security evaluation;
+- SecOps, kill switch và incident response.
+
+Security labs dùng fixtures/simulations trong controlled environment. Mục tiêu là xây **defensive controls + measurable security tests**.
+
+Graduation flow:
+
+```text
+Agent Engineering -> Evaluation -> AI Agent Security -> Reliability/SRE -> Capstone
+```
 
 ## Recommended order
 
@@ -104,9 +125,16 @@ Không chỉ chạy notebook rồi xem như hoàn thành. Hãy sửa TODO, thử
 13. `08_deep_agents/12_deep_agents.ipynb`
 14. `09_mcp_langsmith/13_mcp.ipynb`
 15. `09_mcp_langsmith/14_langsmith_observability_evaluation.ipynb`
-16. `10_production_capstone/15_production_and_capstone.ipynb`
+16. `10_security/16_ai_security_foundations.ipynb`
+17. `10_security/17_guardrails_policy_enforcement.ipynb`
+18. `10_security/18_identity_authorization_tool_security.ipynb`
+19. `10_security/19_prompt_injection_memory_data_security.ipynb`
+20. `10_security/20_sandbox_mcp_supply_chain_security.ipynb`
+21. `10_security/21_agentic_red_teaming_security_eval.ipynb`
+22. `10_security/22_agent_secops_incident_response.ipynb`
+23. `11_production_capstone/23_production_reliability_and_capstone.ipynb`
 
-Chi tiết mapping toàn bộ roadmap từ **Phase 0 đến Phase 35** nằm trong [COURSE_MAP.md](COURSE_MAP.md).
+Chi tiết mapping toàn bộ roadmap từ **Phase 0 đến Phase 42** nằm trong [COURSE_MAP.md](COURSE_MAP.md).
 
 ## Legacy warning
 
@@ -134,8 +162,14 @@ Capstone của course là **AI Interview Agent / Codebase Interview System** có
 - specialized subagents,
 - MCP tools,
 - LangSmith tracing/evaluation,
-- guardrails,
+- threat model,
+- deterministic authorization + guardrails,
+- prompt-injection/memory-poison defenses,
+- sandbox/MCP/supply-chain controls,
+- security regression evaluation,
+- kill switch + incident response,
 - streaming,
-- deployment checklist.
+- reliability/SRE,
+- canary/rollback + release gates.
 
 Chi tiết nằm trong notebook cuối.
